@@ -22,7 +22,7 @@ export default function Home() {
           <button className="text-sm bg-blue-500 text-white px-4 py-2 hover:bg-blue-700">
             View My Projects
           </button>
-          <button className="text-sm border border-blue-500 px-4 py-2 text-blue-500">
+          <button className="text-sm border border-blue-500 px-4 py-2 text-blue-500 ml-4">
             Download Resume
           </button>
         </div>

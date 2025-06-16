@@ -1,23 +1,29 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <nav className="flex justify-between bg-zinc-200 p-4">
-      <h1>Subash Chandra Bose R</h1>
+    <nav className="flex justify-between shadow border-b border p-4 sticky top-0">
+      <div>
+        <Link href="/">
+        <span className="bg-gradient-to-r from-orange-600 to-red-300 bg-clip-text text-transparent font-bold">Subash Chandra Bose R</span>
+        </Link>
+      </div>
       <ul className="flex space-x-4  ">
         <li>
-          <a href="/" className="hover:text-blue-800">
+          <Link href="/" className="hover:text-blue-800">
             Home{' '}
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about" className="hover:text-blue-800">
+          <Link href="/about" className="hover:text-blue-800">
             {' '}
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/projects" className="hover:text-blue-800">
+          <Link href="/projects" className="hover:text-blue-800">
             Projects{' '}
-          </a>
+          </Link>
         </li>
         <li>
           <a href="url" className="hover:text-blue-800">
